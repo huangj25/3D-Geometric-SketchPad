@@ -1,0 +1,5 @@
+all: main.exe
+
+main.exe: main.cpp objects.cpp display.cpp obj_manage.cpp objects.h display.h obj_manage.h
+	g++ main.cpp objects.cpp display.cpp obj_manage.cpp -o main.exe -Wall -std=c++11 -static -static-libgcc -static-libstdc++ -DSFML_STATIC -fexec-charset=UTF-8 -finput-charset=UTF-8 -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\include" -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\include" -I"C:\Program Files (x86)\Dev-Cpp\MinGW64\lib\gcc\x86_64-w64-mingw32\13.2.0\include" -I"C:\Users\15777\Desktop\mine\program\cpp\SFML-2.6.2\include" -L"C:\Program Files (x86)\Dev-Cpp\MinGW64\lib" -L"C:\Program Files (x86)\Dev-Cpp\MinGW64\x86_64-w64-mingw32\lib" -L"C:\Users\15777\Desktop\mine\program\cpp\SFML-2.6.2\lib" -static-libstdc++ -static-libgcc -lsfml-graphics-s -lsfml-window-s -lsfml-system-s -lopengl32 -lfreetype -lwinmm -lgdi32 -lglu32
+	main.exe
